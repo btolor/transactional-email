@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* .email {
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background: orange;
+}
+* .email .email-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 4%;
+  background: white;
+}
+* .email .email-container .header-row #header-td img {
+  width: 40%;
+}
+* .email .email-container .header-row #header-td #order-number {
+  float: right;
+  padding-top: 13%;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+* .email .email-container .thankyou-row #thankyou-td {
+  padding-top: 3%;
+}
+* .email .email-container .thankyou-row #thankyou-td #thankyou-header {
+  font-family: sans-serif;
+  color: black;
+  font-size: 1.7vw;
+  font-weight: 500;
+}
+* .email .email-container .thankyou-row #thankyou-td #thankyou-P {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 1.2vw;
+  font-weight: 500;
+  padding: 2% 0 9%;
+}
+* .email .email-container .thankyou-row #thankyou-td #v-order {
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 500;
+  padding: 4% 5%;
+  border-radius: 5px;
+  background-color: #080e66;
+  text-decoration: none;
+}
+* .email .email-container .thankyou-row #thankyou-td span {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin: 0 4%;
+}
+* .email .email-container .thankyou-row #thankyou-td #v-store {
+  font-family: sans-serif;
+  color: #080e66;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

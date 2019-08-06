@@ -1,0 +1,45 @@
+@import SASS-MIXINS
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    .email
+        +center(100%, 0 auto)
+        border-spacing: 0
+        border-collapse: collapse
+        background: orange
+        .email-container
+            +center(600px,0 auto)
+            padding: 0 4%
+            background: white
+            .header-row
+                #header-td
+                    img 
+                        width: 40%
+                    #order-number
+                        float: right
+                        padding-top: 13%
+                        text-transform: uppercase
+                        +text($text,$fontB,1.6vw,500)
+            .thankyou-row
+                #thankyou-td
+                    padding-top: 3%
+                    #thankyou-header
+                        +text($text,$fontA,1.7vw,500)
+                    #thankyou-P
+                        +text($text,$fontB,1.2vw,500)
+                        padding: 2% 0 9%
+                    #v-order
+                        +text($text,white,1.2vw,500)
+                        padding: 4% 5%
+                        border-radius: 5px
+                        background-color: $purple
+                        text-decoration: none
+                    span
+                        +text($text,$fontC,1.2vw,500)
+                        margin: 0 4%
+                    #v-store
+                        +text($text,$purple,1.2vw,500)
+                        text-decoration: none
+
