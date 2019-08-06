@@ -1,2 +1,2 @@
-# transnational-email
-Transnational email for Shine Craft Vessel CO.
+# transactional-email
+Transactional email for Shine Craft Vessel CO.
