@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border-spacing: 0;
 }
 * .email {
   width: 100%;
@@ -12,8 +13,10 @@
 * .email .email-container {
   width: 600px;
   margin: 0 auto;
-  padding: 0 4%;
   background: white;
+}
+* .email .email-container .header-row #header-td {
+  padding: 0 8%;
 }
 * .email .email-container .header-row #header-td img {
   width: 40%;
@@ -28,12 +31,12 @@
   font-weight: 500;
 }
 * .email .email-container .thankyou-row #thankyou-td {
-  padding-top: 3%;
+  padding: 3% 8% 13%;
 }
 * .email .email-container .thankyou-row #thankyou-td #thankyou-header {
   font-family: sans-serif;
   color: black;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   font-weight: 500;
 }
 * .email .email-container .thankyou-row #thankyou-td #thankyou-P {
@@ -41,17 +44,21 @@
   color: #777;
   font-size: 1.2vw;
   font-weight: 500;
-  padding: 2% 0 9%;
+  padding: 3% 0 10%;
 }
 * .email .email-container .thankyou-row #thankyou-td #v-order {
   font-family: sans-serif;
   color: white;
   font-size: 1.2vw;
-  font-weight: 500;
+  font-weight: 600;
   padding: 4% 5%;
   border-radius: 5px;
   background-color: #080e66;
   text-decoration: none;
+  transition: 0.2s linear;
+}
+* .email .email-container .thankyou-row #thankyou-td #v-order:hover {
+  background-color: #0f1bbd;
 }
 * .email .email-container .thankyou-row #thankyou-td span {
   font-family: sans-serif;
@@ -64,7 +71,42 @@
   font-family: sans-serif;
   color: #080e66;
   font-size: 1.2vw;
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+* .email .email-container .thankyou-row #thankyou-td #v-store:hover {
+  color: #0f1bbd;
+}
+* .email .email-container .order-row #order-td {
+  border-top: 1px solid #bfbfbf;
+  padding: 8%;
+}
+* .email .email-container .order-row #order-td #order-header {
+  font-family: sans-serif;
+  color: black;
+  font-size: 2vw;
+  font-weight: 600;
+}
+* .email .email-container .order-row #order-td #product-img-link {
+  text-decoration: none;
+}
+* .email .email-container .order-row #order-td #product-img-link img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+* .email .email-container .order-row #order-td #product-link {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 2%;
+}
+* .email .email-container .order-row #order-td #price {
+  text-align: right;
   text-decoration: none;
 }
 

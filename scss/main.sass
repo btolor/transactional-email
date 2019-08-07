@@ -4,6 +4,7 @@
 *
     margin: 0
     padding: 0
+    border-spacing: 0
     .email
         +center(100%, 0 auto)
         border-spacing: 0
@@ -11,10 +12,10 @@
         background: orange
         .email-container
             +center(600px,0 auto)
-            padding: 0 4%
             background: white
             .header-row
                 #header-td
+                    padding: 0 8%
                     img 
                         width: 40%
                     #order-number
@@ -24,22 +25,47 @@
                         +text($text,$fontB,1.6vw,500)
             .thankyou-row
                 #thankyou-td
-                    padding-top: 3%
+                    padding: 3% 8% 13% 
                     #thankyou-header
-                        +text($text,$fontA,1.7vw,500)
+                        +text($text,$fontA,1.8vw,500)
                     #thankyou-P
                         +text($text,$fontB,1.2vw,500)
-                        padding: 2% 0 9%
+                        padding: 3% 0 10%
                     #v-order
-                        +text($text,white,1.2vw,500)
+                        +text($text,white,1.2vw,600)
                         padding: 4% 5%
                         border-radius: 5px
                         background-color: $purple
                         text-decoration: none
+                        transition: 0.2s linear
+                        &:hover
+                            background-color: $hover
                     span
                         +text($text,$fontC,1.2vw,500)
                         margin: 0 4%
                     #v-store
-                        +text($text,$purple,1.2vw,500)
+                        +text($text,$purple,1.2vw,600)
                         text-decoration: none
-
+                        transition: 0.2s linear
+                        &:hover
+                            color: $hover
+            .order-row
+                #order-td
+                    border-top: 1px solid $border
+                    padding: 8% 
+                    #order-header
+                        +text($text,$fontA,2vw,600)
+                    #product-img-link
+                        text-decoration: none
+                        img
+                            width: 40px
+                            height:40px
+                            border-radius: 10px
+                            vertical-align: middle
+                    #product-link
+                        text-decoration: none
+                        +text($text,$fontB,14px,600)
+                        padding-left: 2% 
+                    #price
+                        text-align: right
+                        text-decoration: none
