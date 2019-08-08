@@ -8,7 +8,7 @@
   margin: 0 auto;
   border-spacing: 0;
   border-collapse: collapse;
-  background: orange;
+  background: transparent;
 }
 * .email .email-container {
   width: 600px;
@@ -16,7 +16,7 @@
   background: white;
 }
 * .email .email-container .header-row #header-td {
-  padding: 0 8%;
+  padding: 6% 8% 0;
 }
 * .email .email-container .header-row #header-td img {
   width: 40%;
@@ -80,33 +80,251 @@
 }
 * .email .email-container .order-row #order-td {
   border-top: 1px solid #bfbfbf;
-  padding: 8%;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 8% 0;
 }
-* .email .email-container .order-row #order-td #order-header {
+* .email .email-container .order-row #order-td .order-container {
+  width: 85%;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+* .email .email-container .order-row #order-td .order-container #summary-td {
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 4%;
+}
+* .email .email-container .order-row #order-td .order-container #summary-td #order-header {
   font-family: sans-serif;
   color: black;
   font-size: 2vw;
   font-weight: 600;
+  padding-bottom: 6%;
 }
-* .email .email-container .order-row #order-td #product-img-link {
+* .email .email-container .order-row #order-td .order-container #summary-td #product-img-link {
   text-decoration: none;
 }
-* .email .email-container .order-row #order-td #product-img-link img {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+* .email .email-container .order-row #order-td .order-container #summary-td #product-img-link img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
   vertical-align: middle;
 }
-* .email .email-container .order-row #order-td #product-link {
+* .email .email-container .order-row #order-td .order-container #summary-td #product-link {
+  float: left;
   text-decoration: none;
   font-family: sans-serif;
-  color: #777;
-  font-size: 14px;
-  font-weight: 600;
-  padding-left: 2%;
+  color: #555;
+  font-size: 16px;
+  font-weight: 800;
+  padding-left: 1%;
+  padding-top: 3%;
 }
-* .email .email-container .order-row #order-td #price {
-  text-align: right;
+* .email .email-container .order-row #order-td .order-container #summary-td #price {
+  text-decoration: none;
+  float: right;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 2.8%;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td {
+  width: 100%;
+  margin: 0 auto;
+  float: right;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 65%;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .subtotal-row #subtotal-td {
+  padding-top: 8%;
+  padding-bottom: 3%;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .subtotal-row #subtotal-td #subtotal-title {
+  float: left;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .subtotal-row #subtotal-td #subtotal {
+  float: right;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 800;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .shipping-row #shipping-td {
+  padding-bottom: 6%;
+  border-bottom: 1px solid #bfbfbf;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .shipping-row #shipping-td #shipping-title {
+  float: left;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .shipping-row #shipping-td #shipping {
+  float: right;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 800;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .grand-total-row #grand-total-td {
+  padding-top: 6%;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .grand-total-row #grand-total-td #grand-total-title {
+  float: left;
+  padding-top: 2%;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+}
+* .email .email-container .order-row #order-td .order-container .total-row #total-td .total-container .grand-total-row #grand-total-td #grand-total {
+  float: right;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 28px;
+  font-weight: 800;
+}
+* .email .email-container .customer-info-row #customer-info-td {
+  padding: 7% 8%;
+}
+* .email .email-container .customer-info-row #customer-info-td #customer-info-title {
+  font-family: sans-serif;
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container {
+  width: 100%;
+  margin: 0 auto;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td {
+  width: 50%;
+  padding: 4% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-address-title {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-name {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1.5% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-street {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-city-state {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1.5% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-zip {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-method-title {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16% 0 1.5%;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #shipping-info-td #shipping-method {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td {
+  width: 50%;
+  padding: 4% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-address-title {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-name {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1.5% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-street {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-city-state {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 1.5% 0;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-zip {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-method-title {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16% 0 1.5%;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-method {
+  font-family: sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+* .email .email-container .customer-info-row #customer-info-td .info-container .info-row #billing-info-td #billing-method span {
+  font-weight: 700;
+  color: #555;
+}
+* .email .email-container .footer-row #footer-td {
+  border-top: 1px solid #bfbfbf !important;
+  padding: 6% 0;
+}
+* .email .email-container .footer-row #footer-td #footer-statement {
+  padding-left: 8%;
+  font-family: sans-serif;
+  color: #777;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+* .email .email-container .footer-row #footer-td #contact-link {
+  padding-left: 8%;
+  font-family: sans-serif;
+  color: #080e66;
+  font-size: 1.1vw;
+  font-weight: 500;
   text-decoration: none;
 }
 

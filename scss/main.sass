@@ -9,13 +9,13 @@
         +center(100%, 0 auto)
         border-spacing: 0
         border-collapse: collapse
-        background: orange
+        background: transparent
         .email-container
             +center(600px,0 auto)
             background: white
             .header-row
                 #header-td
-                    padding: 0 8%
+                    padding: 6% 8% 0
                     img 
                         width: 40%
                     #order-number
@@ -52,20 +52,137 @@
             .order-row
                 #order-td
                     border-top: 1px solid $border
-                    padding: 8% 
-                    #order-header
-                        +text($text,$fontA,2vw,600)
-                    #product-img-link
+                    border-bottom: 1px solid $border
+                    padding: 8% 0 
+                    .order-container
+                        +center(85%, 0 auto)
+                        border-spacing: 0
+                        border-collapse: collapse
+                        #summary-td
+                            border-bottom: 1px solid $border
+                            padding-bottom: 4%
+                            #order-header
+                                +text($text,$fontA,2vw,600)
+                                padding-bottom: 6%
+                            #product-img-link
+                                text-decoration: none
+                                img
+                                    float: left
+                                    width: 50px
+                                    height:50px
+                                    border-radius: 8px
+                                    vertical-align: middle
+                            #product-link
+                                float: left
+                                text-decoration: none
+                                +text($text,$fontC,16px,800)
+                                padding-left: 1% 
+                                padding-top: 3%
+                            #price
+                                text-decoration: none
+                                float: right
+                                +text($text,$fontC,18px,800)
+                                padding-top: 2.8%
+                        .total-row
+                            #total-td
+                                +center(100%, 0 auto)
+                                float: right
+                                .total-container 
+                                    border-spacing: 0
+                                    border-collapse: collapse   
+                                    width: 65%
+                                    .subtotal-row
+                                        #subtotal-td
+                                            padding-top: 8%
+                                            padding-bottom: 3%
+                                            #subtotal-title
+                                                float: left
+                                                +text($text,$fontB,18px,500)
+                                            #subtotal
+                                                float: right
+                                                +text($text,$fontC,18px,800)
+                                    .shipping-row
+                                        #shipping-td
+                                            padding-bottom: 6%
+                                            border-bottom: 1px solid $border
+                                            #shipping-title
+                                                float: left
+                                                +text($text,$fontB,18px,500)
+                                            #shipping
+                                                float: right
+                                                +text($text,$fontC,18px,800)
+                                    .grand-total-row
+                                        #grand-total-td
+                                            padding-top: 6%
+                                            #grand-total-title
+                                                float: left
+                                                padding-top: 2%
+                                                +text($text,$fontB,18px,500)
+                                            #grand-total
+                                                float: right
+                                                +text($text,$fontC,28px,800)
+            .customer-info-row
+                #customer-info-td
+                    padding: 7% 8%
+                    #customer-info-title
+                        +text($text,$fontA,24px,500)
+                    .info-container
+                        +center(100%,0 auto)
+                        .info-row
+                            #shipping-info-td
+                                width: 50%
+                                padding: 4% 0
+                                #shipping-address-title
+                                    +text($text,$fontC,18px,600)
+                                #shipping-name
+                                    +text($text,$fontB,18px,400)
+                                    padding: 1.5% 0
+                                #shipping-street
+                                    +text($text,$fontB,18px,400)
+                                #shipping-city-state
+                                    +text($text,$fontB,18px,400)
+                                    padding: 1.5% 0
+                                #shipping-zip
+                                    +text($text,$fontB,18px,400)
+                                #shipping-method-title
+                                    +text($text,$fontC,18px,600)
+                                    padding: 16% 0 1.5%
+                                #shipping-method
+                                    +text($text,$fontB,18px,400)
+                            #billing-info-td 
+                                width: 50%
+                                padding: 4% 0
+                                #billing-address-title
+                                    +text($text,$fontC,18px,600)
+                                #billing-name
+                                    +text($text,$fontB,18px,400)
+                                    padding: 1.5% 0
+                                #billing-street
+                                    +text($text,$fontB,18px,400)
+                                #billing-city-state
+                                    +text($text,$fontB,18px,400)
+                                    padding: 1.5% 0
+                                #billing-zip
+                                    +text($text,$fontB,18px,400)
+                                #billing-method-title
+                                    +text($text,$fontC,18px,600)
+                                    padding: 16% 0 1.5%
+                                #billing-method
+                                    +text($text,$fontB,18px,400)
+                                    span
+                                        font-weight: 700
+                                        color: $fontC
+            .footer-row
+                #footer-td
+                    border-top: 1px solid $border !important
+                    padding: 6% 0
+                    #footer-statement
+                        padding-left: 8%
+                        +text($text,$fontB,1.2vw,500)
+                    #contact-link
+                        padding-left: 8%
+                        +text($text,$purple,1.1vw,500)
                         text-decoration: none
-                        img
-                            width: 40px
-                            height:40px
-                            border-radius: 10px
-                            vertical-align: middle
-                    #product-link
-                        text-decoration: none
-                        +text($text,$fontB,14px,600)
-                        padding-left: 2% 
-                    #price
-                        text-align: right
-                        text-decoration: none
+
+
+
