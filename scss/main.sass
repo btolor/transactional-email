@@ -10,13 +10,14 @@
         border-spacing: 0
         border-collapse: collapse
         background: transparent
+        background-color: $fontB
         .email-container
             +center(600px,0 auto)
             background: white
             .header-row
                 #header-td
                     padding: 6% 8% 0
-                    img 
+                    #shine-logo 
                         width: 40%
                     #order-number
                         float: right
@@ -40,7 +41,7 @@
                         transition: 0.2s linear
                         &:hover
                             background-color: $hover
-                    span
+                    #thankyou-span
                         +text($text,$fontC,1.2vw,500)
                         margin: 0 4%
                     #v-store
@@ -175,10 +176,10 @@
             .footer-row
                 #footer-td
                     border-top: 1px solid $border !important
-                    padding: 6% 0
+                    padding: 6% 0 3%
                     #footer-statement
                         padding-left: 8%
-                        +text($text,$fontB,1.2vw,500)
+                        +text($text,$fontB,1.1vw,500)
                     #contact-link
                         padding-left: 8%
                         +text($text,$purple,1.1vw,500)

@@ -1,0 +1,44 @@
+@media screen and (min-width: 600px) {
+  #order-number {
+    font-size: 20px !important;
+  }
+
+  #thankyou-header {
+    font-size: 25px !important;
+  }
+
+  #thankyou-P {
+    font-size: 17px !important;
+  }
+
+  #v-order {
+    font-size: 17px !important;
+  }
+
+  #thankyou-span {
+    font-size: 17px !important;
+  }
+
+  #v-store {
+    font-size: 17px !important;
+  }
+
+  #order-header {
+    font-size: 28px !important;
+  }
+
+  #product-link {
+    font-size: 16px !important;
+  }
+
+  #price {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .email-container {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
