@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- The character set should be utf-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- Link to fontawesome icons CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Link to the email's CSS, which will be inlined into the email -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+      * .email .email-container .thankyou-row #thankyou-td #v-order:hover{background-color:#0f1bbd}
+      * .email .email-container .thankyou-row #thankyou-td #v-store:hover{color:#0f1bbd}
+    </style>
+    <style type="text/css">
+      @media screen and (min-width: 600px) {
+        #order-number {
+          font-size: 20px !important;
+        }
+        #thankyou-header {
+          font-size: 25px !important;
+        }
+        #thankyou-P {
+          font-size: 17px !important;
+        }
+        #v-order {
+          font-size: 17px !important;
+        }
+        #thankyou-span {
+          font-size: 17px !important;
+        }
+        #v-store {
+          font-size: 17px !important;
+        }
+        #order-header {
+          font-size: 28px !important;
+        }
+        #product-link {
+          font-size: 16px !important;
+        }
+        #price {
+          font-size: 18px !important;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 450px !important;
+        }
+        .email-container #order-number {
+          font-size: 16px !important;
+          padding-top: 15% !important;
+        }
+        .email-container #thankyou-header {
+          font-size: 20px !important;
+        }
+        .email-container #thankyou-P {
+          font-size: 15px !important;
+        }
+        .email-container #v-order {
+          font-size: 14px !important;
+        }
+        .email-container #thankyou-span {
+          font-size: 14px !important;
+        }
+        .email-container #v-store {
+          font-size: 14px !important;
+        }
+        .email-container #order-header {
+          font-size: 24px !important;
+        }
+        .email-container #product-link {
+          font-size: 13px !important;
+          padding-left: 2.5% !important;
+        }
+        .email-container #price {
+          font-size: 18px !important;
+        }
+        .email-container #shipping-address-title {
+          font-size: 16px !important;
+        }
+        .email-container #shipping-name {
+          font-size: 16px !important;
+          padding: 2% 0 !important;
+        }
+        .email-container #shipping-street {
+          font-size: 16px !important;
+        }
+        .email-container #shipping-city-state {
+          font-size: 16px !important;
+          padding: 2% 0 !important;
+        }
+        .email-container #shipping-zip {
+          font-size: 16px !important;
+        }
+        .email-container #shipping-method-title {
+          font-size: 16px !important;
+          padding-bottom: 2% !important;
+        }
+        .email-container #shipping-method {
+          font-size: 16px !important;
+        }
+        .email-container #billing-info-td {
+          padding-top: 0 !important;
+        }
+        .email-container #billing-info-td #billing-address-title {
+          font-size: 16px !important;
+        }
+        .email-container #billing-info-td #billing-name {
+          font-size: 16px !important;
+          padding: 2% 0 !important;
+        }
+        .email-container #billing-info-td #billing-street {
+          font-size: 16px !important;
+        }
+        .email-container #billing-info-td #billing-city-state {
+          font-size: 16px !important;
+          padding: 2% 0 !important;
+        }
+        .email-container #billing-info-td #billing-zip {
+          font-size: 16px !important;
+        }
+        .email-container #billing-info-td #billing-method-title {
+          font-size: 16px !important;
+          padding-bottom: 2% !important;
+        }
+        .email-container #billing-info-td #billing-method {
+          font-size: 16px !important;
+        }
+        .email-container #footer-td {
+          padding: 4% 0 2% !important;
+        }
+        .email-container #footer-td #footer-statement {
+          font-size: 10px !important;
+        }
+        .email-container #footer-td #contact-link {
+          font-size: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .email-container {
+          width: 100% !important;
+        }
+        .email-container #order-number {
+          font-size: 14px !important;
+        }
+        .email-container #thankyou-header {
+          font-size: 19px !important;
+        }
+        .email-container #thankyou-P {
+          font-size: 15px !important;
+        }
+        .email-container #v-order {
+          font-size: 13px !important;
+        }
+        .email-container #thankyou-span {
+          font-size: 13px !important;
+        }
+        .email-container #v-store {
+          font-size: 13px !important;
+        }
+        .email-container #summary-td {
+          text-align: center !important;
+          text-align: -webkit-center !important;
+          padding-bottom: 6% !important;
+        }
+        .email-container #summary-td #order-header {
+          font-size: 24px !important;
+          float: left !important;
+        }
+        .email-container #summary-td #product-img-link img {
+          width: 100% !important;
+          height: 80% !important;
+        }
+        .email-container #summary-td #product-link {
+          padding-top: 7% !important;
+          padding-left: 0 !important;
+          font-size: 15px !important;
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+        .email-container #summary-td #price {
+          padding-top: 6.7% !important;
+        }
+        .email-container #grand-total {
+          font-size: 22px !important;
+        }
+        .email-container #customer-info-title {
+          font-size: 24px !important;
+          padding-bottom: 4% !important;
+        }
+        .email-container .info-row {
+          width: 100% !important;
+        }
+        .email-container .info-row #shipping-info-td {
+          width: 80% !important;
+          margin: 0 auto !important;
+          display: block !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-address-title {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-name {
+          font-size: 20px !important;
+          padding: 2.3% 0 !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-street {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-city-state {
+          font-size: 20px !important;
+          padding: 2.3% 0 !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-zip {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-method-title {
+          font-size: 20px !important;
+          padding-bottom: 2.3% !important;
+          padding-top: 6% !important;
+        }
+        .email-container .info-row #shipping-info-td #shipping-method {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #billing-info-td {
+          width: 80% !important;
+          margin: 0 auto !important;
+          display: block !important;
+          padding-top: 8% !important;
+        }
+        .email-container .info-row #billing-info-td #billing-address-title {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #billing-info-td #billing-name {
+          font-size: 20px !important;
+          padding: 2.3% 0 !important;
+        }
+        .email-container .info-row #billing-info-td #billing-street {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #billing-info-td #billing-city-state {
+          font-size: 20px !important;
+          padding: 2.3% 0 !important;
+        }
+        .email-container .info-row #billing-info-td #billing-zip {
+          font-size: 20px !important;
+        }
+        .email-container .info-row #billing-info-td #billing-method-title {
+          font-size: 20px !important;
+          padding-bottom: 2.3% !important;
+          padding-top: 6% !important;
+        }
+        .email-container .info-row #billing-info-td #billing-method {
+          font-size: 20px !important;
+        }
+        .email-container #footer-td #footer-statement {
+          font-size: 10px !important;
+        }
+        .email-container #footer-td #contact-link {
+          font-size: 10px !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin:0;padding:0;border-spacing:0;">
+    <!-- start of email -->
+    <table class="email" style="margin:0;padding:0;width:100%;margin:0 auto;border-spacing:0;border-collapse:collapse;background:transparent;background-color:#777;">
+      <tr style="margin:0;padding:0;border-spacing:0;">
+        <td style="margin:0;padding:0;border-spacing:0;">
+          <!-- start of email-container -->
+          <table class="email-container" style="margin:0;padding:0;border-spacing:0;width:600px;margin:0 auto;background:white;">
+            <!-- start of header-row -->
+            <tr class="header-row" style="margin:0;padding:0;border-spacing:0;">
+              <td id="header-td" style="margin:0;padding:0;border-spacing:0;padding:6% 8% 0;">
+                <img src="https://i.postimg.cc/gcMWmXt5/Shinelogo.jpg" alt="Shine Logo" id="shine-logo" style="margin:0;padding:0;border-spacing:0;width:40%;">
+                <h2 id="order-number" style="margin:0;padding:0;border-spacing:0;float:right;padding-top:13%;text-transform:uppercase;font-family:sans-serif;color:#777;font-size:1.6vw;font-weight:500;">ORDER xxx2019</h2>
+              </td>
+            </tr>
+            <!-- end of header-row -->
+            <!-- start of thankyou-row -->
+            <tr class="thankyou-row" style="margin:0;padding:0;border-spacing:0;">
+              <td id="thankyou-td" style="margin:0;padding:0;border-spacing:0;padding:3% 8% 13%;">
+                <h1 id="thankyou-header" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:black;font-size:1.8vw;font-weight:500;">
+                  Thank you for your purchase!
+                                </h1>
+                <p id="thankyou-P" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:1.2vw;font-weight:500;padding:3% 0 10%;line-height:1.3;">
+                  Hi Really Good Emails, we're getting your order ready to be shipped. We will notify you when it has been sent.
+                                </p>
+                <a href="#" id="v-order" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:white;font-size:1.2vw;font-weight:600;padding:4% 5%;border-radius:5px;background-color:#080e66;text-decoration:none;transition:0.2s linear;">View your order</a>
+                <span id="thankyou-span" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#555;font-size:1.2vw;font-weight:500;margin:0 4%;">or</span>
+                <a href="#" id="v-store" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#080e66;font-size:1.2vw;font-weight:600;text-decoration:none;transition:0.2s linear;">View your store</a>
+              </td>
+            </tr>
+            <!-- end of thankyou-row -->
+            <!-- start of order-row -->
+            <tr class="order-row" style="margin:0;padding:0;border-spacing:0;">
+              <td id="order-td" style="margin:0;padding:0;border-spacing:0;border-top:1px solid #bfbfbf;border-bottom:1px solid #bfbfbf;padding:8% 0;">
+                <!-- start of order container -->
+                <table class="order-container" style="margin:0;padding:0;width:85%;margin:0 auto;border-spacing:0;border-collapse:collapse;">
+                  <!-- start of summary row -->
+                  <tr class="summary-row" style="margin:0;padding:0;border-spacing:0;">
+                    <td id="summary-td" style="margin:0;padding:0;border-spacing:0;border-bottom:1px solid #bfbfbf;padding-bottom:4%;">
+                      <h1 id="order-header" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:black;font-size:2vw;font-weight:500;padding-bottom:6%;">
+                        Order summary
+                                            </h1>
+                      <a href="#" id="product-img-link" style="margin:0;padding:0;border-spacing:0;text-decoration:none;">
+                        <img src="https://i.postimg.cc/kXBd4Jk5/shine-bottle.jpg" alt="Shine Bottle" style="margin:0;padding:0;border-spacing:0;float:left;width:50px;height:50px;border-radius:8px;vertical-align:middle;">
+                      </a>
+                      <a href="#" id="product-link" style="margin:0;padding:0;border-spacing:0;float:left;text-decoration:none;font-family:sans-serif;color:#555;font-size:16px;font-weight:800;padding-left:1.5%;padding-top:3%;">
+                        Wander and Rumble, Municipal Yellow Squealer × 1 
+                                            </a>
+                      <a href="#" id="price" style="margin:0;padding:0;border-spacing:0;text-decoration:none;float:right;font-family:sans-serif;color:#555;font-size:18px;font-weight:800;padding-top:2.8%;">$39.00</a>
+                    </td>
+                  </tr>
+                  <!-- start of summary row -->
+                  <!-- start of total row -->
+                  <tr class="total-row" style="margin:0;padding:0;border-spacing:0;">
+                    <td id="total-td" align="right" style="margin:0;padding:0;border-spacing:0;width:100%;margin:0 auto;float:right;">
+                      <!-- start of total conrainer -->
+                      <table class="total-container" style="margin:0;padding:0;border-spacing:0;border-collapse:collapse;width:65%;">
+                        <!-- start of subtotal row -->
+                        <tr class="subtotal-row" style="margin:0;padding:0;border-spacing:0;">
+                          <td id="subtotal-td" style="margin:0;padding:0;border-spacing:0;padding-top:8%;padding-bottom:3%;">
+                            <h2 id="subtotal-title" style="margin:0;padding:0;border-spacing:0;float:left;font-family:sans-serif;color:#777;font-size:18px;font-weight:500;">Subtotal</h2>
+                            <h2 id="subtotal" style="margin:0;padding:0;border-spacing:0;float:right;font-family:sans-serif;color:#555;font-size:18px;font-weight:800;">$39.00</h2>
+                          </td>
+                        </tr>
+                        <!-- end of subtotal row -->
+                        <!-- start of shipping row -->
+                        <tr class="shipping-row" style="margin:0;padding:0;border-spacing:0;">
+                          <td id="shipping-td" style="margin:0;padding:0;border-spacing:0;padding-bottom:6%;border-bottom:1px solid #bfbfbf;">
+                            <h2 id="shipping-title" style="margin:0;padding:0;border-spacing:0;float:left;font-family:sans-serif;color:#777;font-size:18px;font-weight:500;">Shipping</h2>
+                            <h2 id="shipping" style="margin:0;padding:0;border-spacing:0;float:right;font-family:sans-serif;color:#555;font-size:18px;font-weight:800;">$8.00</h2>
+                          </td>
+                        </tr>
+                        <!-- end of shipping row -->
+                        <!-- start of grand-total row -->
+                        <tr class="grand-total-row" style="margin:0;padding:0;border-spacing:0;">
+                          <td id="grand-total-td" style="margin:0;padding:0;border-spacing:0;padding-top:6%;">
+                            <h2 id="grand-total-title" style="margin:0;padding:0;border-spacing:0;float:left;padding-top:2%;font-family:sans-serif;color:#777;font-size:18px;font-weight:500;">Total</h2>
+                            <h1 id="grand-total" style="margin:0;padding:0;border-spacing:0;float:right;font-family:sans-serif;color:#555;font-size:28px;font-weight:800;">$47.00 USD</h1>
+                          </td>
+                        </tr>
+                        <!-- end of grand-total row -->
+                      </table>
+                      <!-- end of total conrainer -->
+                    </td>
+                  </tr>
+                  <!-- start of total row -->
+                </table>
+                <!-- start of order container -->
+              </td>
+            </tr>
+            <!-- end of order-row -->
+            <!-- start of customer-info-row -->
+            <tr class="customer-info-row" style="margin:0;padding:0;border-spacing:0;">
+              <td id="customer-info-td" style="margin:0;padding:0;border-spacing:0;padding:7% 8%;">
+                <h1 id="customer-info-title" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:black;font-size:24px;font-weight:500;">Customer Information</h1>
+                <!-- start of info-container -->
+                <table class="info-container" style="margin:0;padding:0;border-spacing:0;width:100%;margin:0 auto;">
+                  <tr class="info-row" style="margin:0;padding:0;border-spacing:0;">
+                    <td id="shipping-info-td" style="margin:0;padding:0;border-spacing:0;width:50%;padding:4% 0;">
+                      <h3 id="shipping-address-title" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#555;font-size:18px;font-weight:600;">Shipping address</h3>
+                      <h3 id="shipping-name" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;padding:1.5% 0;">Randy Quadd Jr.</h3>
+                      <h3 id="shipping-street" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">681 Linden Dr #306</h3>
+                      <h3 id="shipping-city-state" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;padding:1.5% 0;">Englewood, Florida</h3>
+                      <h3 id="shipping-zip" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">34223-7130</h3>
+                      <h3 id="shipping-method-title" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#555;font-size:18px;font-weight:600;padding:16% 0 1.5%;">Shipping method</h3>
+                      <h3 id="shipping-method" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">USPS 2-Day Priority Shipping</h3>
+                    </td>
+                    <td id="billing-info-td" style="margin:0;padding:0;border-spacing:0;width:50%;padding:4% 0;">
+                      <h3 id="billing-address-title" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#555;font-size:18px;font-weight:600;">Billing address</h3>
+                      <h3 id="billing-name" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;padding:1.5% 0;">Randy Quadd Jr.</h3>
+                      <h3 id="billing-street" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">681 Linden Dr #306</h3>
+                      <h3 id="billing-city-state" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;padding:1.5% 0;">Englewood, Florida</h3>
+                      <h3 id="billing-zip" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">34223-7130</h3>
+                      <h3 id="billing-method-title" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#555;font-size:18px;font-weight:600;padding:16% 0 1.5%;">Billing method</h3>
+                      <h3 id="billing-method" style="margin:0;padding:0;border-spacing:0;font-family:sans-serif;color:#777;font-size:18px;font-weight:400;">Ending in XXXX - <span style="margin:0;padding:0;border-spacing:0;font-weight:700;color:#555;">$47.00</span>
+                      </h3>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end of info-container -->
+              </td>
+            </tr>
+            <!-- end of customer-info-row -->
+            <!-- start of footer row -->
+            <tr class="footer-row" style="margin:0;padding:0;border-spacing:0;">
+              <td id="footer-td" style="margin:0;padding:0;border-spacing:0;padding:3% 0;border-top:1px solid #bfbfbf !important;">
+                <h6 id="footer-statement" style="margin:0;padding:0;border-spacing:0;padding-left:8%;font-family:sans-serif;color:#777;font-size:12px;font-weight:500;">
+                  If you have any questions, reply to this email or contact us at
+                                </h6>
+                <a href="#" id="contact-link" style="margin:0;padding:0;border-spacing:0;padding-left:8%;font-family:sans-serif;color:#080e66;font-size:12px;font-weight:500;text-decoration:none;">service@shinevessels.com</a>
+              </td>
+            </tr>
+            <!-- end of footer row -->
+          </table>
+          <!-- end of email-container -->
+        </td>
+      </tr>
+    </table>
+    <!-- end of email -->
+  </body>
+</html>

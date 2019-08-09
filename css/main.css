@@ -46,6 +46,7 @@
   font-size: 1.2vw;
   font-weight: 500;
   padding: 3% 0 10%;
+  line-height: 1.3;
 }
 * .email .email-container .thankyou-row #thankyou-td #v-order {
   font-family: sans-serif;
@@ -98,7 +99,7 @@
   font-family: sans-serif;
   color: black;
   font-size: 2vw;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 6%;
 }
 * .email .email-container .order-row #order-td .order-container #summary-td #product-img-link {
@@ -118,7 +119,7 @@
   color: #555;
   font-size: 16px;
   font-weight: 800;
-  padding-left: 1%;
+  padding-left: 1.5%;
   padding-top: 3%;
 }
 * .email .email-container .order-row #order-td .order-container #summary-td #price {
@@ -311,20 +312,20 @@
 }
 * .email .email-container .footer-row #footer-td {
   border-top: 1px solid #bfbfbf !important;
-  padding: 6% 0 3%;
+  padding: 3% 0;
 }
 * .email .email-container .footer-row #footer-td #footer-statement {
   padding-left: 8%;
   font-family: sans-serif;
   color: #777;
-  font-size: 1.1vw;
+  font-size: 12px;
   font-weight: 500;
 }
 * .email .email-container .footer-row #footer-td #contact-link {
   padding-left: 8%;
   font-family: sans-serif;
   color: #080e66;
-  font-size: 1.1vw;
+  font-size: 12px;
   font-weight: 500;
   text-decoration: none;
 }

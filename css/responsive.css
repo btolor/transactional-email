@@ -37,7 +37,219 @@
 }
 @media screen and (max-width: 600px) {
   .email-container {
+    width: 450px !important;
+  }
+  .email-container #order-number {
+    font-size: 16px !important;
+    padding-top: 15% !important;
+  }
+  .email-container #thankyou-header {
+    font-size: 20px !important;
+  }
+  .email-container #thankyou-P {
+    font-size: 15px !important;
+  }
+  .email-container #v-order {
+    font-size: 14px !important;
+  }
+  .email-container #thankyou-span {
+    font-size: 14px !important;
+  }
+  .email-container #v-store {
+    font-size: 14px !important;
+  }
+  .email-container #order-header {
+    font-size: 24px !important;
+  }
+  .email-container #product-link {
+    font-size: 13px !important;
+    padding-left: 2.5% !important;
+  }
+  .email-container #price {
+    font-size: 18px !important;
+  }
+  .email-container #shipping-address-title {
+    font-size: 16px !important;
+  }
+  .email-container #shipping-name {
+    font-size: 16px !important;
+    padding: 2% 0 !important;
+  }
+  .email-container #shipping-street {
+    font-size: 16px !important;
+  }
+  .email-container #shipping-city-state {
+    font-size: 16px !important;
+    padding: 2% 0 !important;
+  }
+  .email-container #shipping-zip {
+    font-size: 16px !important;
+  }
+  .email-container #shipping-method-title {
+    font-size: 16px !important;
+    padding-bottom: 2% !important;
+  }
+  .email-container #shipping-method {
+    font-size: 16px !important;
+  }
+  .email-container #billing-info-td {
+    padding-top: 0 !important;
+  }
+  .email-container #billing-info-td #billing-address-title {
+    font-size: 16px !important;
+  }
+  .email-container #billing-info-td #billing-name {
+    font-size: 16px !important;
+    padding: 2% 0 !important;
+  }
+  .email-container #billing-info-td #billing-street {
+    font-size: 16px !important;
+  }
+  .email-container #billing-info-td #billing-city-state {
+    font-size: 16px !important;
+    padding: 2% 0 !important;
+  }
+  .email-container #billing-info-td #billing-zip {
+    font-size: 16px !important;
+  }
+  .email-container #billing-info-td #billing-method-title {
+    font-size: 16px !important;
+    padding-bottom: 2% !important;
+  }
+  .email-container #billing-info-td #billing-method {
+    font-size: 16px !important;
+  }
+  .email-container #footer-td {
+    padding: 4% 0 2% !important;
+  }
+  .email-container #footer-td #footer-statement {
+    font-size: 10px !important;
+  }
+  .email-container #footer-td #contact-link {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .email-container {
     width: 100% !important;
+  }
+  .email-container #order-number {
+    font-size: 14px !important;
+  }
+  .email-container #thankyou-header {
+    font-size: 19px !important;
+  }
+  .email-container #thankyou-P {
+    font-size: 15px !important;
+  }
+  .email-container #v-order {
+    font-size: 13px !important;
+  }
+  .email-container #thankyou-span {
+    font-size: 13px !important;
+  }
+  .email-container #v-store {
+    font-size: 13px !important;
+  }
+  .email-container #summary-td {
+    text-align: center !important;
+    text-align: -webkit-center !important;
+    padding-bottom: 6% !important;
+  }
+  .email-container #summary-td #order-header {
+    font-size: 24px !important;
+    float: left !important;
+  }
+  .email-container #summary-td #product-img-link img {
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .email-container #summary-td #product-link {
+    padding-top: 7% !important;
+    padding-left: 0 !important;
+    font-size: 15px !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+  .email-container #summary-td #price {
+    padding-top: 6.7% !important;
+  }
+  .email-container #grand-total {
+    font-size: 22px !important;
+  }
+  .email-container #customer-info-title {
+    font-size: 24px !important;
+    padding-bottom: 4% !important;
+  }
+  .email-container .info-row {
+    width: 100% !important;
+  }
+  .email-container .info-row #shipping-info-td {
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-address-title {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-name {
+    font-size: 20px !important;
+    padding: 2.3% 0 !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-street {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-city-state {
+    font-size: 20px !important;
+    padding: 2.3% 0 !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-zip {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-method-title {
+    font-size: 20px !important;
+    padding-bottom: 2.3% !important;
+    padding-top: 6% !important;
+  }
+  .email-container .info-row #shipping-info-td #shipping-method {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #billing-info-td {
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    padding-top: 8% !important;
+  }
+  .email-container .info-row #billing-info-td #billing-address-title {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #billing-info-td #billing-name {
+    font-size: 20px !important;
+    padding: 2.3% 0 !important;
+  }
+  .email-container .info-row #billing-info-td #billing-street {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #billing-info-td #billing-city-state {
+    font-size: 20px !important;
+    padding: 2.3% 0 !important;
+  }
+  .email-container .info-row #billing-info-td #billing-zip {
+    font-size: 20px !important;
+  }
+  .email-container .info-row #billing-info-td #billing-method-title {
+    font-size: 20px !important;
+    padding-bottom: 2.3% !important;
+    padding-top: 6% !important;
+  }
+  .email-container .info-row #billing-info-td #billing-method {
+    font-size: 20px !important;
+  }
+  .email-container #footer-td #footer-statement {
+    font-size: 10px !important;
+  }
+  .email-container #footer-td #contact-link {
+    font-size: 10px !important;
   }
 }
 
